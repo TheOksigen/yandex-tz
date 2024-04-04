@@ -1,0 +1,884 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.align-self-start {
+    align-self: flex-start;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.textwhite {
+    color: #fff;
+}
+
+.bgesas {
+    background-color: var(--esas);
+}
+
+.textsari {
+    color: var(--sari);
+}
+
+.bgsari {
+    background-color: var(--sari);
+}
+
+.textboz {
+    color: var(--boz);
+}
+
+.bgboz {
+    background-color: var(--boz);
+}
+
+.section-bg {
+    background-color: var(--section-bg);
+}
+
+.textyasil {
+    color: var(--yasil);
+}
+
+.bgyasil {
+    background-color: var(--yasil);
+}
+
+.textqara {
+    color: var(--qara);
+}
+
+.bgqara {
+    background-color: var(--qara);
+}
+
+.textqirmizi {
+    color: var(--qirmizi);
+}
+
+.bgqirmizi {
+    background-color: var(--qirmizi);
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
+}
+
+.d-none {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.px-10 {
+    padding: 0 10px;
+}
+
+/* header start  */
+header {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+#nav-right-item,
+#nav-left-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#nav-left-item li {
+    margin-right: 3vw;
+    font: 500 18px 'Suse Int';
+}
+
+#nav-right-item li {
+    margin-left: 3vw;
+    font: 500 18px 'Suse Int';
+}
+
+#nav-brand {
+    color: #000;
+    font: 900 32px 'Suse Int';
+}
+
+#nav-login,
+#nav-lang {
+    font: 500 18px 'Suse Int';
+}
+
+#nav-lang {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.xett {
+    height: 3px;
+    width: 27px;
+    background-color: #000;
+    display: block;
+    transition: .4s;
+}
+
+#xett1 {
+    margin-bottom: 5px;
+}
+
+#nav-right-item li>button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#sidebar {
+    transform: translateX(-300%);
+    transition: .4s;
+    height: 0;
+    background-color: #fff;
+}
+
+#sideicon1,
+#sideicon2 {
+    transition: .4s;
+}
+
+#sidebar-menu li {
+    margin-bottom: 20px;
+    font: 500 20px 'Suse Int';
+}
+
+#sidebar-menu li button {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    width: 100% !important;
+    padding: 0 !important;
+    font: 500 20px 'Suse Int';
+    cursor: pointer;
+}
+
+.sidebar-menu-2 {
+    visibility: hidden;
+    height: 0;
+}
+
+.sidebar-menu-3 {
+    padding: 0 0 0 10px;
+    visibility: hidden;
+    height: 0;
+}
+
+#sidebar-menu-content {
+    visibility: hidden;
+    height: 0;
+}
+
+#sidebar-menu-content li {
+    margin-bottom: 40px;
+}
+
+#sidebar-menu-content span {
+    display: inline-block;
+    margin-bottom: 20px;
+    font: 400 14px 'Suse Int';
+    color: #000;
+}
+
+.text1 {
+    font: 500 16px 'Suse Int';
+    margin-bottom: 10px;
+}
+
+.text2 {
+    font: 400 14px 'Suse Int';
+    color: #72707E;
+}
+
+/* header end  */
+/* main start  */
+#section1 {
+    background: url('../img/c36f8d7a81867d8278b22d2b57a98118.png') center/cover no-repeat;
+    padding: 100px 0;
+}
+
+.title-img {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    padding: 6px 8px 6px 8px;
+    background-color: #ecf1f8;
+    border: 1px solid #fff;
+    border-radius: 6px;
+}
+
+.title-img hr {
+    margin: 0 10px;
+    height: 24px;
+    background-color: #72707E66;
+}
+
+.title-img span {
+    font: 400 13px 'Suse Int';
+}
+
+.hero-img-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-img {
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+}
+
+.hero-title-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0 0 0;
+    gap: 30px 0;
+}
+
+.hero-title-row h1 {
+    font: 450 32px 'Suse Int';
+    text-align: center;
+}
+
+.hero-title-row h3 {
+    font: 400 18px 'Suse Int';
+    text-align: center;
+}
+
+.hero-title-row button {
+    padding: 13px 32px 13px 32px;
+    background-color: #B470EB;
+    color: #fff;
+    border-radius: 100px;
+    font: 400 18px 'Suse Int';
+    border: none;
+    cursor: pointer;
+}
+
+.slider-text {
+    margin: 40px 0 50px 0;
+    text-align: center;
+    color: #72707E;
+    font: 500 12px 'Suse Int';
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    height: 52px;
+    object-fit: cover;
+}
+
+#section2 {
+    padding: 100px 0;
+}
+
+#section2 h2 {
+    font: 400 32px 'Suse Int';
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.swiper-card {
+    border: 2px solid #E4E4E4;
+    position: relative;
+    padding: 30px 20px;
+    border-radius: 6px;
+    height: 370px;
+}
+
+.card3-item {
+    border: 2px solid #E4E4E4;
+    position: relative;
+    padding: 30px 20px;
+    height: 390px;
+    width: 33.33%;
+}
+
+.card3-item:nth-child(1) {
+    border-radius: 6px 0 0 6px;
+}
+
+.card3-item:nth-child(3) {
+    border-radius: 0 6px 6px 0;
+}
+
+.swiper-card p,
+.card3-item p {
+    color: #959595;
+    font: 500 16px 'Suse Int';
+    text-align: start;
+    margin-bottom: 30px;
+}
+
+.swiper-card h3,
+.card3-item h3 {
+    font: 400 24px 'Suse Int';
+    text-align: start;
+}
+
+.swiper-card div,
+.card3-item div {
+    position: absolute;
+    left: 20px;
+    bottom: 40px;
+}
+
+#section3 {
+    background-color: #000 !important;
+    background-image: url('../img/Pattern\ dots.png');
+    padding: 50px 20px;
+}
+
+#section3 p {
+    color: #fff;
+    font: 400 24px 'Suse Int';
+    line-height: 32px;
+}
+
+.black-item {
+    margin-bottom: 20px;
+}
+
+#section4 {
+    padding: 50px 0;
+}
+
+#sect4btn {
+    width: 150px;
+    background: #B470EB;
+    padding: 13px 32px;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+    font: 400 16px 'Suse Int';
+}
+
+#section4 h2 {
+    font: 400 32px 'Suse int';
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#teklifbtns {
+    text-align: center
+}
+
+#teklifbtns button {
+    padding: 13px 20px;
+    border-radius: 50px;
+    border: none;
+    font: 400 16px 'Suse Int';
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#teklifbtn1 {
+    background-color: #000;
+    color: #fff;
+}
+
+#teklifbtn2 {
+    border: 1px solid #DFE3E8 !important;
+    background-color: transparent;
+}
+
+.teklifs {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+#teklif1 {
+    border: 2px solid #B470EB;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+#teklif2 {
+    border: 2px solid #DFE3E8;
+    border-radius: 10px;
+    padding: 24px;
+    display: none;
+}
+
+#teklif1 h3,
+#teklif2 h3 {
+    font: 500 24px 'Suse Int';
+    display: inline-block;
+}
+
+.popular {
+    background-color: rgba(180, 112, 235, 0.16);
+    border: none;
+    border-radius: 20px;
+    font: 400 12px 'Suse Int';
+    color: #8230C5;
+    padding: 3px 10px;
+    margin-left: 10px;
+}
+
+#teklif1>p,
+#teklif2>p {
+    font: 400 16px 'Suse Int';
+    color: #637381;
+    margin: 30px 0
+}
+
+#teklif1>p>span,
+#teklif2>p>span {
+    font-size: 54px;
+    color: #000;
+}
+
+.buy {
+    background: #B470EB;
+    border: none;
+    border-radius: 100px;
+    padding: 13px 32px;
+    color: #fff;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font: 400 16px 'Suse Int';
+}
+
+#teklif2 .buy {
+    background-color: #000 !important;
+}
+
+#teklif1>span,
+#teklif2>span {
+    display: block;
+    text-align: center;
+    color: #919EAB;
+    font: 400 12px 'Suse Int';
+    margin-bottom: 20px;
+}
+
+.teklifler {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.teklifler>span {
+    background-color: rgba(180, 112, 235, 0.12);
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.teklifler>span>i {
+    color: rgba(130, 48, 197, 1);
+}
+
+.teklifler>p {
+    font: 400 16px 'Suse Int';
+}
+
+#section5 {
+    background: #EDDAFB;
+    padding: 50px 0 0 0;
+}
+
+#section5 h3 {
+    font: 400 32px 'Suse Int';
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#section5 button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    width: 140px;
+    display: block;
+    margin: auto;
+    padding: 13px 32px;
+    font: 400 18px 'Suse Int';
+}
+
+#main-img {
+    margin-top: 20px;
+}
+
+#section6 {
+    padding: 50px 0;
+}
+
+#section6 h3 {
+    font: 400 32px 'Suse Int';
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sc6-box,
+.sc6-box-des {
+    background: rgba(240, 244, 250, 0.6);
+    border-radius: 8px;
+    padding: 24px;
+    height: 500px;
+}
+
+.sc6-box-des {
+    height: 450px !important;
+}
+
+.sc6-box h4,
+.sc6-box-des h4 {
+    font: 600 22px 'Suse Int';
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+.sc6-box p,
+.sc6-box-des p {
+    font: 400 18px 'Suse Int';
+    line-height: 1.5em;
+    text-align: start;
+    margin-bottom: 60px;
+}
+
+.sc6-box div,
+.sc6-box-des div {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+
+#demo-overlay {
+    background-color: #35353580;
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    display: none;
+}
+
+.demo-item {
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 6px;
+    position: relative;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+}
+
+.demo-item input,
+.demo-item select {
+    display: block;
+    width: 300px;
+    margin-bottom: 20px;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 100px;
+    border: 1px solid #DFE3E8;
+    outline: none;
+}
+
+.demo-item>form>button {
+    background-color: #B470EB;
+    color: #fff;
+    font: 400 16px 'Suse Int';
+    padding: 12px 16px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.demo-item p {
+    width: 300px;
+    text-align: center;
+    font: 400 12px 'Suse Int';
+    margin-top: 30px;
+}
+
+.demo-item>button {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#sol-link {
+    cursor: pointer;
+}
+
+#sol-link:hover #sol-overlay {
+    display: block;
+}
+
+#sol-overlay {
+    position: absolute;
+    top: 48px;
+    display: none;
+}
+
+#sol-overlay div {
+    margin-top: 20px;
+    background-color: #fff;
+    display: flex;
+    padding: 16px;
+    gap: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+
+#sol-overlay div ul li {
+    margin-bottom: 30px;
+}
+
+#sol-overlay div ul li span {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+#sol-overlay div ul li p {
+    line-height: 1.8em;
+}
+
+/* main end  */
+/* footer start  */
+footer {
+    background-color: rgba(240, 244, 250, 1);
+    padding: 50px 0;
+}
+
+.footer-item {
+    margin-bottom: 40px
+}
+
+.footer-item1 {
+    margin-bottom: 40px;
+}
+
+.footer-item h4 {
+    font: 400 14px 'Suse Int';
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-item p {
+    font: 400 16px 'Suse Int';
+    margin-bottom: 20px;
+}
+
+.footer-top {
+    display: none;
+}
+
+.footer-bottom-logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer-bottom-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.footer-bottom-icons span {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.copy p {
+    text-align: center;
+    margin-bottom: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    font: 400 13px 'Suse Int';
+}
+
+/* footer end  */
+@media only screen and (min-width: 768px) {
+    .d-s-none {
+        display: none;
+    }
+
+    .d-s-block {
+        display: block;
+    }
+
+    .col-s-6 {
+        width: 50%;
+    }
+
+    header {
+        position: absolute;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    /* main start  */
+    .hero-img-row {
+        width: 50%;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .hero-img {
+        width: 33.33%;
+    }
+
+    .cards3-row {
+        display: flex;
+    }
+
+    .pxr-s-50 {
+        padding-right: 50px;
+    }
+
+    .pxl-s-50 {
+        padding-left: 50px;
+    }
+
+    #teklif2 {
+        display: block;
+    }
+
+    #section5 h3 {
+        text-align: start;
+    }
+
+    #main-text {
+        padding-left: 180px !important;
+    }
+
+    /* main end  */
+    /* footer start  */
+    footer .row {
+        gap: 10px;
+    }
+
+    .footer-item {
+        width: 19%;
+    }
+
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    .footer-top-icons {
+        display: flex;
+        gap: 20px;
+    }
+
+    .footer-top-icons span {
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .copy {
+        display: flex;
+        gap: 20px;
+    }
+
+    .ilk {
+        margin-left: auto;
+    }
+
+    /* footer end  */
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        max-width: 85%;
+    }
+
+    .d-lg-none {
+        display: none;
+    }
+
+    #hero-sponsor {
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}

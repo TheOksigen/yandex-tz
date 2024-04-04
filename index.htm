@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- header start  -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul id="nav-left-item">
+                    <li>
+                        <a href="index.htm" id="nav-brand">
+                            Logo
+                        </a>
+                    </li>
+                    <li id="sol-link" class="d-none d-s-block">Solutions <i class="fas fa-angle-down"></i>
+                        <div id="sol-overlay">
+                            <div>
+                                <ul>
+                                    <li>For marketplaces</li>
+                                    <li>For online stores</li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <img src="img/Menu IC.png" alt="menu image" /> <span>Amazon</span>
+                                        <p class="text1"><b>Office ipsum you must be <br> muted. Guys pulling.</b></p>
+                                        <p class="text2">Office ipsum you must be <br> muted. Floor roll that's ask.</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/Menu IC.png" alt="menu image" /> <span>Amazon</span>
+                                        <p class="text1"><b>Office ipsum you must be</b></p>
+                                        <p class="text2">Office ipsum you must be <br> muted. Impact churning <br> future-proof zoom innovation <br> kpis accountable let level big.</p>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <img src="img/Menu IC.png" alt="menu image" /> <span>Amazon</span>
+                                        <p class="text1"><b>Office ipsum you must be</b></p>
+                                        <p class="text2">Office ipsum you must be <br> muted. Price cta call wider <br> native uat reality watches.</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/Group 2087328101.png" alt="menu image" /> <span>Mercado libre</span>
+                                        <p class="text1"><b>Office ipsum you must be</b></p>
+                                        <p class="text2">Office ipsum you must be <br> muted. Crank asserts search <br> wiggle usabiltiy ocean ladder <br> responsible. Floor ballpark.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="d-none d-s-block">Blog</li>
+                </ul>
+                <ul id="nav-right-item">
+                    <li>
+                        <select id="nav-lang">
+                            <option value="en">En</option>
+                            <option value="pt">Pt</option>
+                            <option value="es">Es</option>
+                        </select>
+                    </li>
+                    <li>
+                        <button onclick="navLoginBtn()" id="nav-login">Log In</button>
+                    </li>
+                    <li class="d-s-none">
+                        <button onclick="navMenuBtn()" id="nav-btn">
+                            <span class="xett" id="xett1"></span>
+                            <span class="xett" id="xett2"></span>
+                        </button>
+                    </li>
+                    <li class="d-none d-s-block">Book a Demo</li>
+                </ul>
+            </nav>
+        </div>
+        <div id="sidebar">
+            <div class="container">
+                <ul id="sidebar-menu">
+                    <li>
+                        <button onclick="sidebarDrop()"><span>Solutions</span> <i id="sideicon1" class="fas fa-angle-down"></i></button>
+                        <ul class="sidebar-menu-2">
+                            <li>
+                                <button onclick="sideBarDropContent()"><span>For marketplaces</span> <i id="sideicon2" class="fas fa-angle-down"></i></button>
+                                <ul id="sidebar-menu-content">
+                                    <li>
+                                        <img src="img/Menu IC.png" alt="menu image" /> <span>Amazon</span>
+                                        <p class="text1">Manage your Amazon PPC strategy</p>
+                                        <p class="text2">Supercharge your business and save time</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/Menu IC.png" alt="menu image" /> <span>Amazon</span>
+                                        <p class="text1">Manage your Amazon PPC strategy</p>
+                                        <p class="text2">Supercharge your business and save time</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/Menu IC.png" alt="menu image" /> <span>Amazon</span>
+                                        <p class="text1">Manage your Amazon PPC strategy</p>
+                                        <p class="text2">Supercharge your business and save time</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/Group 2087328101.png" alt="menu image" /> <span>Mercado libre</span>
+                                        <p class="text1">Manage your Amazon PPC strategy</p>
+                                        <p class="text2">Supercharge your business and save time</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="sidebar-menu-3">
+                            <li>
+                                <button><span>For online stores</span> <i class="fas fa-angle-down"></i></button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- header end  -->
+    <!-- main start  -->
+    <main>
+        <section id="section1">
+           <div class="container">
+                <div class="hero-img-row">
+                    <div class="hero-img">
+                        <div class="title-img">
+                            <img src="img/amazon ads.png" alt="amazon-img" /> 
+                            <hr> 
+                            <span>Verified Partner</span>
+                        </div>
+                    </div>
+                    <div class="hero-img">
+                        <div class="title-img">
+                            <img src="img/amazon ads.png" alt="amazon-img" /> 
+                            <hr> 
+                            <span>Verified Partner</span>
+                        </div>
+                    </div>
+                    <div class="hero-img">
+                        <div class="title-img">
+                            <img src="img/badge.png" alt="badge-img" /> 
+                            <hr> 
+                            <span>Verified Partner</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-title-row">
+                    <h1>Office ipsum you must be muted. We weeks existing.</h1>
+                    <h3>Office ipsum you must be muted. Quick if bake for eow.</h3>
+                    <button id="demo" onclick="bookDemoOpen()">Book a demo</button>
+                </div>
+                <p class="slider-text">Trusted by 300+ customers worldwide</p>
+                <div class="swiper mySwiper d-lg-none">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/1032-PM-Final_logos_Phoenix_Medical-orange_flame-Chinese-thicker-text_1 (1) 1.png" alt="slider-image" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Dis.png" alt="slider-image" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Dis (1).png" alt="slider-image" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/dsi2.png" alt="slider-image" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Eva.png" alt="slider-image" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Advatec.png" alt="slider-image" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/activotex.png" alt="slider-image" />
+                        </div>
+                    </div>
+                </div>
+                <div id="hero-sponsor" class="d-none">
+                    <div class="sponsor-item">
+                        <img src="img/1032-PM-Final_logos_Phoenix_Medical-orange_flame-Chinese-thicker-text_1 (1) 1.png" alt="image" />
+                    </div>
+                    <div class="sponsor-item">
+                        <img src="img/Dis.png" alt="image" />
+                    </div>
+                    <div class="sponsor-item">
+                        <img src="img/Dis (1).png" alt="image" />
+                    </div>
+                    <div class="sponsor-item">
+                        <img src="img/dsi2.png" alt="image" />
+                    </div>
+                    <div class="sponsor-item">
+                        <img src="img/Eva.png" alt="image" />
+                    </div>
+                    <div class="sponsor-item">
+                        <img src="img/Advatec.png" alt="image" />
+                    </div>
+                    <div class="sponsor-item">
+                        <img src="img/activotex.png" alt="image" />
+                    </div>
+                </div>
+           </div>
+        </section>
+        <section id="demo-overlay">
+            <div class="demo-item">
+                <button onclick="bookDemoClose()"><i class="fa-solid fa-xmark fa-2x"></i></button>
+                <form action="#">
+                    <input type="text" placeholder="First Name" />
+                    <input type="text" placeholder="Last Name" />
+                    <input type="email" placeholder="Work Email" />
+                    <input type="url" placeholder="Website" />
+                    <select id="sel">
+                        <option>What is your montly ppc spend?</option>
+                    </select>
+                    <button>Book a demo</button>
+                </form>
+                <p>Office ipsum you must be muted. First-order hurting got didn't thought pole us level. Investigation items breakout wheel innovation switch follow needle hard.</p>
+            </div>
+        </section>
+        <section id="section2">
+            <div class="container">
+                <h2>For those who</h2>
+                <div class="swiper mySwiper1 d-s-none">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-card">
+                                <p>01</p>
+                                <h3>Office ipsum you must be muted. Needle price left.</h3>
+                                <div>
+                                    <img src="img/icon.png" alt="image" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-card">
+                                <p>02</p>
+                                <h3>Office ipsum you must be muted. Needle price left.</h3>
+                                <div>
+                                    <img src="img/icon1.png" alt="image" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-card">
+                                <p>03</p>
+                                <h3>Office ipsum you must be muted. Journey would regroup read innovation.</h3>
+                                <div>
+                                    <img src="img/icon2.png" alt="image" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards3-row d-none">
+                    <div class="card3-item">
+                        <p>01</p>
+                        <h3>Office ipsum you must be muted. Back-end.</h3>
+                        <div><img src="img/icon.png" alt="image"></div>
+                    </div>
+                    <div class="card3-item">
+                        <p>02</p>
+                        <h3>Office ipsum you must be muted. Back-end.</h3>
+                        <div><img src="img/icon1.png" alt="image"></div>
+                    </div>
+                    <div class="card3-item">
+                        <p>03</p>
+                        <h3>Office ipsum you must be muted. Back-end.</h3>
+                        <div><img src="img/icon2.png" alt="image"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-s-6 pxr-s-50 align-self-center">
+                        <div class="black-item">
+                            <p>Office ipsum you must be muted. My synergize meeting harvest metal. Speed organic wiggle thought cloud.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-s-6 pxl-s-50">
+                        <div class="black-item">
+                            <img width="100%" src="img/illustation.png" alt="image" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section4">
+            <div class="container">
+                <button id="sect4btn">Try for Free</button>
+                <h2>Office ipsum you must be</h2>
+                <div id="teklifbtns" class="d-s-none">
+                    <button onclick="pro()" id="teklifbtn1">Pro</button>
+                    <button onclick="ultimate()" id="teklifbtn2">Ultimate</button>
+                </div>
+                <div class="teklifs">
+                    <div id="teklif1">
+                        <h3>Pro</h3>
+                        <button class="popular">Most popular</button>
+                        <p>For growing business</p>
+                        <p><span>$39</span> / month</p>
+                        <button class="buy">Buy now</button>
+                        <span>7-day money-back guarantee</span>
+                        <div class="teklifler">
+                            <span><i class="fa-solid fa-check"></i></span>
+                            <p>Office ipsum you must be muted. Lunch moving latest.</p>
+                        </div>
+                        <div class="teklifler">
+                            <span><i class="fa-solid fa-check"></i></span>
+                            <p><b>Office ipsum you must be muted. Lunch moving latest.</b></p>
+                        </div>
+                        <div class="teklifler">
+                            <span><i class="fa-solid fa-check"></i></span>
+                            <p><b>Office ipsum you must be muted. Lunch moving latest.</b></p>
+                        </div>
+                        <div class="teklifler">
+                            <span><i class="fa-solid fa-check"></i></span>
+                            <p>Office ipsum you must be muted. Lunch moving latest.</p>
+                        </div>
+                        <div class="teklifler">
+                            <span><i class="fa-solid fa-check"></i></span>
+                            <p>Office ipsum you must be muted. Lunch moving latest.</p>
+                        </div>
+                        <div class="teklifler">
+                            <span><i class="fa-solid fa-check"></i></span>
+                            <p>Office ipsum you must be muted. Lunch moving latest.</p>
+                        </div>
+                    </div>
+                    <div id="teklif2">
+                        <h3>Ultimate</h3>
+                        <p>For expert sellers</p>
+                        <p><span>$99</span> / month</p>
+                        <button class="buy">Buy now</button>
+                        <span>7-day money-back guarantee</span>
+                        <div class="teklifler">
+                            <span><i class="fa-solid fa-check"></i></span>
+                            <p>Office ipsum you must be muted. Lunch moving latest.</p>
+                        </div>
+                        <div class="teklifler">
+                            <span><i class="fa-solid fa-check"></i></span>
+                            <p><b>Office ipsum you must be muted. Lunch moving latest.</b></p>
+                        </div>
+                        <div class="teklifler">
+                            <span><i class="fa-solid fa-check"></i></span>
+                            <p><b>Office ipsum you must be muted. Lunch moving latest.</b></p>
+                        </div>
+                        <div class="teklifler">
+                            <span><i class="fa-solid fa-check"></i></span>
+                            <p>Office ipsum you must be muted. Lunch moving latest.</p>
+                        </div>
+                        <div class="teklifler">
+                            <span><i class="fa-solid fa-check"></i></span>
+                            <p>Office ipsum you must be muted. Lunch moving latest.</p>
+                        </div>
+                        <div class="teklifler">
+                            <span><i class="fa-solid fa-check"></i></span>
+                            <p>Office ipsum you must be muted. Lunch moving latest.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section5">
+                <div class="row">
+                    <div id="main-text" class="col-12 col-s-6 align-self-center">
+                       <h3>Office ipsum you must be muted. High left of bake.</h3>
+                       <button>Try now</button>
+                    </div>
+                    <div id="main=img" class="col-12 col-s-6">
+                        <img width="100%" src="img/photo.png" alt="image" />
+                    </div>
+                </div>
+        </section>
+        <section id="section6">
+            <div class="container">
+                <h3>Office ipsum you must be muted.</h3>
+                <div class="swiper mySwiper1 d-s-none">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="sc6-box">
+                                <h4>Office ipsum you must</h4>
+                                <p>Office ipsum you must be muted. Interim if make look back teams eye dogpile. Pushback happenings to productize hard hanging. Mifflin later deploy see reinvent cloud scraps. Organic could due criticality businesses without eager here tomorrow.</p>
+                                <div>
+                                    <img src="img/Frame 2087326230.png" alt="image" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sc6-box">
+                                <h4>Office ipsum you must</h4>
+                                <p>Office ipsum you must be muted. Interim if make look back teams eye dogpile. Pushback happenings to productize hard hanging. Mifflin later deploy see reinvent cloud scraps. Organic could due criticality businesses without eager here tomorrow.</p>
+                                <div>
+                                    <img src="img/Frame 2087326231.png" alt="image" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sc6-box">
+                                <h4>Office ipsum you must</h4>
+                                <p>Office ipsum you must be muted. Interim if make look back teams eye dogpile. Pushback happenings to productize hard hanging. Mifflin later deploy see reinvent cloud scraps. Organic could due criticality businesses without eager here tomorrow.</p>
+                                <div>
+                                    <img src="img/12.png" alt="image" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper mySwiper d-s-block d-none">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="sc6-box-des">
+                                <h4>Lorem ipsum dolor sit amet.</h4>
+                                <p>“Autobidding has enabled us to build on our competitive advantages and stay ahead of our category, no matter what other players try to do. Plus, it saves us a lot of time on manual research”</p>
+                                <div>
+                                    <img src="img/12.png" alt="image" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sc6-box-des">
+                                <h4>Lorem ipsum dolor sit amet.</h4>
+                                <p>“Autobidding has enabled us to build on our competitive advantages and stay ahead of our category, no matter what other players try to do. Plus, it saves us a lot of time on manual research”</p>
+                                <div>
+                                    <img src="img/Frame 2087326230.png" alt="image" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sc6-box-des">
+                                <h4>Lorem ipsum dolor sit amet.</h4>
+                                <p>“Autobidding has enabled us to build on our competitive advantages and stay ahead of our category, no matter what other players try to do. Plus, it saves us a lot of time on manual research”</p>
+                                <div>
+                                    <img src="img/Frame 2087326231.png" alt="image" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sc6-box-des">
+                                <h4>Lorem ipsum dolor sit amet.</h4>
+                                <p>“Autobidding has enabled us to build on our competitive advantages and stay ahead of our category, no matter what other players try to do. Plus, it saves us a lot of time on manual research”</p>
+                                <div>
+                                    <img src="img/12.png" alt="image" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sc6-box-des">
+                                <h4>Lorem ipsum dolor sit amet.</h4>
+                                <p>“Autobidding has enabled us to build on our competitive advantages and stay ahead of our category, no matter what other players try to do. Plus, it saves us a lot of time on manual research”</p>
+                                <div>
+                                    <img src="img/Frame 2087326230.png" alt="image" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main end  -->
+    <!-- footer start  -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-top-logo">
+                    <img src="img/Logo.png" alt="Logo" />
+                </div>
+                <div class="footer-top-icons">
+                    <span><i class="fa-brands fa-linkedin-in"></i></span>
+                    <span><i class="fa-brands fa-facebook-f"></i></span>
+                    <span><i class="fa-brands fa-twitter"></i></span>
+                    <span><i class="fa-solid fa-envelope"></i></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-item">
+                    <h4>Office ipsum you must be muted. Deploy harvest or.</h4>
+                    <p>Office ipsum you must be muted. Hours</p>
+                    <p>Office ipsum you must be muted. Hanging pin where long three. Focus bake reference.</p>
+                    <p>Office ipsum you must be muted.</p>
+                    <p>Office ipsum you must be muted. Criticality economy native buy-in adoption way regroup.</p>
+                </div>
+                <div class="footer-item">
+                    <h4>Office ipsum you must be muted. Deploy harvest or.</h4>
+                    <p>Office ipsum you must be muted. Hours</p>
+                    <p>Office ipsum you must be muted. Hanging pin where long three. Focus bake reference.</p>
+                    <p>Office ipsum you must be muted.</p>
+                    <p>Office ipsum you must be muted. Criticality economy native buy-in adoption way regroup.</p>
+                </div>
+                <div class="footer-item">
+                    <h4>Office ipsum you must be muted. Deploy harvest or.</h4>
+                    <p>Office ipsum you must be muted. Hours</p>
+                    <p>Office ipsum you must be muted. Hanging pin where long three. Focus bake reference.</p>
+                    <p>Office ipsum you must be muted.</p>
+                </div>
+                <div class="footer-item">
+                    <h4>Office ipsum you must be muted. Deploy harvest or.</h4>
+                    <p>Office ipsum you must be muted. Hours</p>
+                    <p>Office ipsum you must be muted. Hanging pin where long three. Focus bake reference.</p>
+                </div>
+                <div class="footer-item">
+                   <div class="footer-item1">
+                        <h4>Office ipsum you must be muted. Deploy harvest or.</h4>
+                        <p>Office ipsum you must be muted. Hours</p>
+                   </div>
+                   <div class="footer-item1">
+                        <h4>Office ipsum you must be muted. Deploy harvest or.</h4>
+                        <p>Office ipsum you must be muted. Hours</p>
+                        <p>Office ipsum you must be muted. Hanging pin where long three. Focus bake reference.</p>
+                   </div>
+                </div>
+            </div>
+            <div class="footer-bottom d-s-none">
+                <div class="footer-bottom-logo">
+                    <img src="img/Logo.png" alt="Logo" />
+                </div>
+                <div class="footer-bottom-icons">
+                    <span><i class="fa-brands fa-linkedin-in"></i></span>
+                    <span><i class="fa-brands fa-facebook-f"></i></span>
+                    <span><i class="fa-brands fa-twitter"></i></span>
+                    <span><i class="fa-solid fa-envelope"></i></span>
+                </div>
+            </div>
+            <div class="copy">
+                <p><span>Cookie Policy</span> <span>Terms of Use</span> <span>Privacy policy</span></p>
+                <p class="d-s-none">1209 N Orange St, Wilmington, DE 19801, USA</p>
+                <p class="d-s-none">© 2023 Beyond ML</p>
+                <p class="ilk d-none d-s-block">Office ipsum you must be muted. Alpha model community.</p>
+                <p class="d-none d-s-block">Office ipsum you</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end  -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/teklif.js"></script>
+    <script src="js/demo.js"></script>
+</body>
+</html>
